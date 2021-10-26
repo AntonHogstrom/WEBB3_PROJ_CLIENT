@@ -1,0 +1,170 @@
+main {
+
+    max-width: 1200px;
+    margin: auto;
+
+    #first_section {
+        height: calc(100vh - 150px);
+        display: flex;
+        align-items: center;
+        @media all and (max-width: 1000px) {
+            height: auto;
+            margin: 100px auto;
+            display: grid;
+            justify-content: center;
+        }
+
+        picture {
+            width: 50%;
+            margin: 15px;
+            text-align: right;
+
+            @media all and (max-width: 1000px) {
+                width: 80%;
+            }
+        }
+        .first_text_div {
+            width: 50%;
+            margin: 15px;
+
+            @media all and (max-width: 1000px) {
+                width: 100%;
+                margin: 0;
+                text-align: center;
+            }
+
+            #signature {
+                font-family: $font_writing;
+                font-size: 42px;
+                color: $grey;
+            }
+            #title {
+                font-family: $font_code;
+                font-size: 32px;
+                margin-left: 18px;
+            }
+        }
+
+    }
+    #courses_section, #works_section, #websites_section {
+        padding: 15px;
+        margin: 20px auto 150px auto;
+        h2 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    }
+    #courses_section {
+        #courses_div {
+            .courses_head {
+                font-size: 1.2em;
+                font-weight: bold;
+
+                @media all and (max-width: 1000px) {
+                    display: none;
+                }
+            }
+            
+            ul {
+                display: grid;
+                width: auto;
+                margin: auto;
+                grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+                .bold {
+                    display: none;
+                }
+
+                @media all and (max-width: 1000px) {
+                    display: block;
+                    margin: 4px auto;
+                    .bold {
+                        display: inline-block;
+                        width: 100px;
+                    }
+                }
+
+                li {
+                    margin: 6px 10px;
+                }
+            }
+        }
+    }
+    #works_section {
+        #works_div {
+            .works_head {
+                font-size: 1.2em;
+                font-weight: bold;
+
+                @media all and (max-width: 1000px) {
+                    display: none;
+                }
+            }
+            ul {
+                display: grid;
+                grid-template-columns: 2fr 2fr 1fr 1fr;
+                .bold {
+                    display: none;
+                }
+                
+                @media all and (max-width: 1000px) {
+                    display: block;
+                    margin: 4px auto;
+                    .bold {
+                        display: inline-block;
+                        width: 100px;
+                    }
+                }
+
+                li {
+                    margin: 6px 10px;
+                }
+            }
+        }
+    }
+
+    #websites_div {
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: end;
+
+        @media all and (max-width: 1000px) {
+            display: block;
+        }
+        
+        .websites {
+            width: 400px;
+            padding: 10px;
+            margin: 30px auto;
+            a {
+                picture {
+                    text-align: center;
+                    margin: auto;
+                    display: block;
+                    max-width: 400px;
+                    img {
+                        max-height: 100%;
+                        max-width: 100%;
+                    }
+                } 
+                
+                div {
+                    margin-top: 10px;
+                    h3 {
+                        font-size: 1.4em;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+                    i {
+                        margin: 10px 0;
+                    }
+                    p {
+                        margin: 20px 0 40px 0;
+                        color: $grey;
+                    }
+                }
+            }
+        } 
+    }     
+}
