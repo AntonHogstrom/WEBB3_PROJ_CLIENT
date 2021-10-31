@@ -12,11 +12,11 @@ let imgPath : string;
 //localhost for private, devnoe.com for public
 if(window.location.hostname == "localhost") {
     api = {
-        courses: "https://localhost/portfolio_api/api/courses",
-        works: "https://localhost/portfolio_api/api/works",
-        websites: "https://localhost/portfolio_api/api/website"
+        courses: "http://localhost/portfolio_api/api/courses",
+        works: "http://localhost/portfolio_api/api/works",
+        websites: "http://localhost/portfolio_api/api/website"
     };
-    imgPath = "https://localhost/portfolio_admin/pub/img/";
+    imgPath = "http://localhost/portfolio_admin/pub/img/";
 } else {
     api = {
         courses: "https://devnoe.com/MIUN/WEBB3PROJ/portfolio_api/API/courses.php",
