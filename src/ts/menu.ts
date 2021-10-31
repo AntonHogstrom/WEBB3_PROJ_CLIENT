@@ -6,6 +6,7 @@ const menuIcon = document.querySelector(".menu_icon");
 const menuUl : HTMLDivElement = document.querySelector("#menu_ul");
 const closeMenu = document.querySelector("#closeMenu");
 const hamburger = document.getElementById("hamburger");
+const topButton = document.getElementById("topButton");
 
 
 if(menuUl) {
@@ -27,4 +28,20 @@ menuEl.addEventListener("click", () => {
 
 closeMenu.addEventListener("click", () => {
     menuUl.style.display = "none";
+})
+
+
+//Show topButton when not in top of page
+if(topButton) {
+    topButton.style.display = "none";
+}
+window.addEventListener("scroll", () => {
+    if(topButton) {
+        topButton.style.display = "none";
+        if(window.scrollY < 300) {
+            topButton.style.display = "none";
+        } else {
+            topButton.style.display = "grid";
+        }
+    }
 })

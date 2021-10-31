@@ -1,13 +1,10 @@
 header {
     nav {
         #navIcons {
-
             display: flex;
             justify-content: space-between;
             align-items: center;
-
             height: 150px;
-
         }
         #menu_div, #loginLink {
             margin: 25px 10vw;
@@ -28,7 +25,7 @@ header {
             width: 60%;
 
             li {
-                margin: 100px 20px;
+                margin: 20px;
             }
             #closeMenu_li {
                 background-color: rgba($greenish, .3);
