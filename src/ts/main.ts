@@ -62,11 +62,11 @@ function getCourses() {
                             `
                         <div class="courses">
                             <ul>
-                                <li><span class="bold">Code: </span>${course.code}</li>
-                                <li><span class="bold">Name: </span>${course.courseName}</li>
-                                <li><span class="bold">University: </span>${course.university}</li>
-                                <li><span class="bold">Start: </span>${course.startDate}</li>
-                                <li><span class="bold">End: </span>${course.endDate}</li>
+                                <li><span class="bold">Code: </span><span class="liData">${course.code}</span></li>
+                                <li><span class="bold">Name: </span><span class="liData">${course.courseName}</span></li>
+                                <li><span class="bold">University: </span><span class="liData">${course.university}</span></li>
+                                <li><span class="bold">Start: </span><span class="liData">${course.startDate}</span></li>
+                                <li><span class="bold">End: </span><span class="liData">${course.endDate}</span></li>
                             </ul>
                         </div>`)
             })
@@ -98,10 +98,10 @@ function getWorks() {
                             `
                             <div class="works">
                                 <ul>
-                                    <li><span class="bold">Company: </span>${works.company}</li>
-                                    <li><span class="bold">Title: </span>${works.title}</li>
-                                    <li><span class="bold">Start Date: </span>${works.startDate}</li>
-                                    <li><span class="bold">End Date: </span>${works.endDate}</li>
+                                    <li><span class="bold">Company: </span><span class="liData">${works.company}</span></li>
+                                    <li><span class="bold">Title: </span><span class="liData">${works.title}</span></li>
+                                    <li><span class="bold">Start Date: </span><span class="liData">${works.startDate}</span></li>
+                                    <li><span class="bold">End Date: </span><span class="liData">${works.endDate}</span></li>
                                 </ul>
                             </div>`)
             })

@@ -3,6 +3,7 @@ main {
     max-width: 1200px;
     margin: auto;
 
+    //Section containing image and name and title
     #first_section {
         height: calc(100vh - 150px);
         display: flex;
@@ -15,13 +16,17 @@ main {
         }
 
         picture {
-            width: 50%;
-            margin: 15px;
-            text-align: right;
+            max-width: 300px;
+            margin: 15px 15px 15px auto;
 
             @media all and (max-width: 1000px) {
                 width: 80%;
+                margin: auto;
             }
+
+            img {
+                width: 100%;
+              }
         }
         .first_text_div {
             width: 50%;
@@ -44,8 +49,9 @@ main {
                 margin-left: 18px;
             }
         }
-
     }
+
+    //Sections where data from API is written out
     #courses_section, #works_section, #websites_section {
         padding: 15px;
         margin: 20px auto 150px auto;
@@ -68,6 +74,13 @@ main {
     }
     #courses_section {
         #courses_div {
+
+            @media all and (max-width: 1000px) {
+                width: 80%;
+            }
+            @media all and (max-width: 600px) {
+                width: 100%;
+            }
             .courses_head {
                 font-size: 1.2em;
                 font-weight: bold;
@@ -78,27 +91,37 @@ main {
                     display: none;
                 }
             }
-            
             ul {
                 display: grid;
-                width: auto;
-                margin: auto;
                 grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
-                .bold {
-                    display: none;
-                }
 
                 @media all and (max-width: 1000px) {
                     display: block;
-                    margin: 4px auto;
-                    .bold {
-                        display: inline-block;
-                        width: 100px;
-                    }
+                    margin: 50px auto;
                 }
 
                 li {
-                    margin: 6px 10px;
+                    margin: 10px;
+
+                    @media all and (max-width: 1000px) {
+                        display: grid;
+                        grid-template-columns: 100px 3fr;
+                        justify-content: left;
+                    }
+
+                    .bold {
+                        display: none;
+                        
+                        @media all and (max-width: 1000px) {
+                            display: inline-block;
+                        }
+                    }
+                    .liData {
+                        @media all and (max-width: 1000px) {
+                            display: inline-block;
+                        }
+                    }
+
                 }
             }
         }
@@ -118,21 +141,35 @@ main {
             ul {
                 display: grid;
                 grid-template-columns: 2fr 2fr 1fr 1fr;
-                .bold {
-                    display: none;
-                }
                 
                 @media all and (max-width: 1000px) {
                     display: block;
-                    margin: 4px auto;
-                    .bold {
-                        display: inline-block;
-                        width: 100px;
-                    }
+                    margin: 50px auto;
                 }
 
                 li {
-                    margin: 6px 10px;
+                    margin: 10px;
+
+                    @media all and (max-width: 1000px) {
+                        display: grid;
+                        grid-template-columns: 100px 3fr;
+                        justify-content: left;
+                    }
+
+                    .bold {
+                        display: none;
+                        
+                        @media all and (max-width: 1000px) {
+                            display: inline-block;
+                        }
+                    }
+                    .liData {
+                        @media all and (max-width: 1000px) {
+                            display: inline-block;
+                        }
+                    }
+
+
                 }
             }
         }

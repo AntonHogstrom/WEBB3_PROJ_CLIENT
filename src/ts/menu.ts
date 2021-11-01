@@ -26,8 +26,11 @@ menuEl.addEventListener("click", () => {
     }
 });
 
+//Close menu on X icon on absolute menu
 closeMenu.addEventListener("click", () => {
     menuUl.style.display = "none";
+    hamburger.classList.remove("fa-times");
+    hamburger.classList.add("fa-bars");
 })
 
 
